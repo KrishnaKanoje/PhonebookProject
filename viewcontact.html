@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link th:href="@{CSS/style.css}" rel="stylesheet"/>
+</head>
+
+<body>
+<footer th:insert="Master::fragment1"></footer>
+<br><br><br>
+<table width="50%" border="2">
+<tr>
+<th>Name</th>
+<th>Contact</th>
+<th>Delete</th>
+<th>Update</th>
+</tr>
+<tr th:each="n:${data}">
+<td align="center"><span th:text="${n.getName()}"></span></td>
+<td align="center"><span th:text="${n.getContact()}"></span></td>
+<td align="center"><a th:href=@{del(id=${n.getId()})}>Delete</a></td>
+<td align="center"><a th:href=@{Update(id=${n.getId()})}>Update</a></td>
+</tr>
+</table>
+</body>
+</html>

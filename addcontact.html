@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link th:href="@{CSS/style.css}" rel="stylesheet"/>
+<script th:src="@{JS/validation.js}" type="text/javascript"></script>
+</head>
+<body>
+<div id="">
+<footer th:include="Master::fragment1" ></footer>
+<br><br><br><br>
+<form action="save" method="post" class="form1">
+<input type="text" name="name" placeholder="Enter the name" onkeyup="validname(this.value)"/><br><br>
+<input type="text" name="Contact" placeholder="Enter the contact"/><br><br>
+<input type="submit" value="Submit"/>
+<span th:text=${msg}></span>
+</form>
+</div>
+</body>
+</html>

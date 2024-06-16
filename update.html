@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://ww.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link th:href="@{CSS/style.css}" rel="stylesheet">
+</head>
+<body>
+<footer th:include="Master::fragment1"></footer>
+<br><br><br><br>
+<form action="upd" method="post" class="form1" th:object="${data}">
+<input type="hidden" th:field="${data.id}"/>
+<input type="text" name="name" placeholder="Enter the name" th:field="${data.name}"/><br><br>
+<input type="text" name="Contact" placeholder="Enter the contact" th:field="${data.Contact}"/><br><br>
+<input type="submit" value="Submit"/>
+</form>
+</body>
+</html>

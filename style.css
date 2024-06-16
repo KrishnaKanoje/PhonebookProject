@@ -1,0 +1,48 @@
+@charset "ISO-8859-1";
+.form1{
+	width:30%;
+	padding:50px;
+	background-color: #d9d9ff;
+	margin:auto;
+}
+input{
+	width:100%;
+	padding:10px;
+	box-sizing: border-box;
+}
+ul li
+{
+	display:inline;
+	padding-left:100px;
+}
+ul{
+	background-color: #00aaaa;
+	padding:40px;
+}
+*{
+	margin:0px;
+}
+ul li a{
+	color:white;
+	font-weight:bolder;
+	font-size: xx-large;
+	text-decoration: none;
+}
+table{
+	margin:auto;
+}
+th{
+	background-color: #9393ff;
+	padding:10px;
+	font-family: sans-serif;
+	font-size: large;
+}
+td{
+	background-color:#d9d9ff;
+	padding:8px; 
+	font-family: sans-serif;
+	font-size: medium;
+}
+body{
+	background-color: #d7ffff;
+}
